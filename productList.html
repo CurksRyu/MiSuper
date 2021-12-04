@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/icono.png">
+    <link rel="shortcut icon" href="/img/otroEstilo_celeste.png">
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Lacteos - Mi Super</title>
 </head>
 <body>
 
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <img src="img/generico_blanco.png" width="100" height="50">
-            </a>
+            <div class="navbar-item py-0" href="https://bulma.io">
+                <img src="img/generico_blanco.png" class="image is-480x600" width="100" height="130" title="Mi Super">
+            </div>
+            
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -25,44 +29,167 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">
-                    Home
-                </a>
-
-                <a class="navbar-item">
-                    Documentation
+                <a class="navbar-item" href="index.html">
+                    Inicio
                 </a>
 
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
+                    <a class="navbar-link" id="mostrarCat">
+                        Categorias
                     </a>
+                </div>
 
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            About
-                        </a>
-                        <a class="navbar-item">
-                            Jobs
-                        </a>
-                        <a class="navbar-item">
-                            Contact
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Report an issue
-                        </a>
+                <div id="displayCategories" class="navbar-dropdown">
+                    <div class="container is-fluid">
+                        <div class="columns">
+                            <div class="column">
+                                <h1 class="title is-6 is-mega-menu-title">Bebidas</h1>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        <p>Bebidas de Fantasia</p>
+                                    </div>
+                                </a>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>Cervezas</p>
+                                    </div>
+                                </a>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>Jugos</p>
+                                    </div>
+                                </a>
+                            </div>        
+                            <div class="column">
+                                <h1 class="title is-6 is-mega-menu-title">Lacteos</h1>
+                                <a class="navbar-item" href="/productList.html">
+                                    <div class="navbar-content">
+                                        
+                                        <p>Leches</p>
+                                    </div>
+                                </a>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>New feature: list of tags</p>
+                                    </div>
+                                </a>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>New feature: list of tags</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column">
+                                <h1 class="title is-6 is-mega-menu-title">Lacteos</h1>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>New feature: list of tags</p>
+                                    </div>
+                                </a>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>New feature: list of tags</p>
+                                    </div>
+                                </a>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>New feature: list of tags</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column">
+                                <h1 class="title is-6 is-mega-menu-title">Lacteos</h1>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>New feature: list of tags</p>
+                                    </div>
+                                </a>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>New feature: list of tags</p>
+                                    </div>
+                                </a>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>New feature: list of tags</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <h1 class="title is-6 is-mega-menu-title">Lacteos</h1>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>New feature: list of tags</p>
+                                    </div>
+                                </a>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>New feature: list of tags</p>
+                                    </div>
+                                </a>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>New feature: list of tags</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="navbar-item pr-6">
-                    <input class="input has-text-black pr-6" type="text" placeholder="Buscar Producto...">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" id="mostrarSup">
+                        Supermercados
+                    </a>
                 </div>
-            </div>
-
+                    
+                <div id="displaySup" class="navbar-dropdown">
+                        <a href="#" class="navbar-item">Santa Isabel</a>
+                        <a href="#" class="navbar-item">Jumbo</a>
+                </div>
+                
+                <div class="navbar-item">
+                    <div class="field has-addons">
+                        <div class="control">
+                            <input class="input has-text-black pr-6" type="text" placeholder="Buscar Producto...">
+                        </div>
+                        <div class="control">
+                            <a href="#" class="button is-dark">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
+                        <a href="#" class="button is-dark">
+                            <p class="has-text-white">Mi cesta</p>
+                            <span class="icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </a>
                         <a class="button is-primary">
                             <strong>Sign up</strong>
                         </a>
@@ -75,6 +202,8 @@
         </div>
     </nav>
 
+
+
     <section class="section pb-0">
         <nav class="breadcrumb" aria-label="breadcrumbs">
             <ul>
@@ -85,9 +214,92 @@
         </nav>
     </section>
 
-    <section class="section pt-4">
-        <div class="box">
-            s
+
+    <section class="section pt-5 ">
+        <div class="container is-fluid">
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            fsdf
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="/img/otroEstilo_celeste.png" alt="" class="p-6">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p class="is-size-6">$900 Precio Oferta</p>
+                            <p class="is-size-4">Producto de muestra</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-item">
+                                <a href="#">Ver producto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="/img/otroEstilo_celeste.png" alt="" class="p-6">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p class="is-size-6">$900 Precio Oferta</p>
+                            <p class="is-size-4">Producto de muestra</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-item">
+                                <a href="#">Ver producto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="/img/otroEstilo_celeste.png" alt="" class="p-6">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p class="is-size-6">$900 Precio Oferta</p>
+                            <p class="is-size-4">Producto de muestra</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-item">
+                                <a href="#">Ver producto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="/img/otroEstilo_celeste.png" alt="" class="p-6">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p class="is-size-6">$900 Precio Oferta</p>
+                            <p class="is-size-4">Producto de muestra</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-item">
+                                <a href="#">Ver producto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
