@@ -2,6 +2,12 @@
 $(document).ready(() => {
     $("#displayCategories").hide();
     $("#displaySup").hide();
+    $("#displayUser").hide();
+    alertify.dialog('alert').set({transition:'fade'}); 
+
+    $("#mostrarUsuario").on("click", function(){
+        $("#displayUser").toggle(200);
+    });
 
     $("#mostrarCat").on("click", function() {
         $("#displayCategories").toggle(200);
@@ -19,9 +25,19 @@ $(document).ready(() => {
         $("#displayCategories").hide(200);
     });
 
-    $(".navbar-burger").click(function() {
+    $("#acerca").on("click", function() {
+        alertify.alert("Acerca de Mi Super","Proyecto culiao xd");
+    });
 
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    $("#tiendas").on("click", function() {
+        alertify.alert("Tiendas Asociadas","Proyecto culiao xd");
+    });
+    
+    $("#about-us").on("click", function() {
+        alertify.alert("Quienes Somos","Proyecto culiao xd");
+    });
+
+    $(".navbar-burger").click(function() {
         $(".navbar-burger").toggleClass("is-active");
         $(".navbar-menu").toggleClass("is-active");
     });
