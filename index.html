@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="shortcut icon" href="/img/icon.png">
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="css/alertify.min.css">
+    <link rel="stylesheet" href="css/themes/semantic.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/JavaScript"></script>
+    <script src="js/alertify.min.js" type="text/JavaScript"></script>
+    <script src="js/scripts.js" type="text/JavaScript"></script>
     <title>Inicio - Mi Super</title>
 </head>
 <body>
 
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <div class="navbar-item" href="https://bulma.io">
-                <img src="img/generico_blanco.png" width="100" height="50" title="Mi Super">
+            <div class="navbar-item py-0" href="https://bulma.io">
+                <img src="img/generico_blanco.png" class="image is-480x600" style="max-height: 50px" title="Mi Super">
             </div>
+            
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -30,6 +34,10 @@
             <div class="navbar-start">
                 <a class="navbar-item" href="index.html">
                     Inicio
+                </a>
+
+                <a class="navbar-item" href="">
+                    Mapa
                 </a>
 
                 <div class="navbar-item has-dropdown is-hoverable">
@@ -125,48 +133,77 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="columns">
+                            <div class="column">
+                                <h1 class="title is-6 is-mega-menu-title">Lacteos</h1>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>New feature: list of tags</p>
+                                    </div>
+                                </a>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>New feature: list of tags</p>
+                                    </div>
+                                </a>
+                                <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                    <div class="navbar-content">
+                                        
+                                        <p>New feature: list of tags</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link" id="mostrarSup">
-                        Supermercados
-                    </a>
-                    
-                    <div id="displaySup" class="navbar-dropdown" >
-                        <a href="#" class="navbar-item"> ghej</a>
-                        
-                    </div>
-                </div>
-                
-                
-                <div class="navbar-item is-mobile">
-                    <div class="field has-addons">
-                        <div class="control">
-                            <input class="input has-text-black pr-6" type="text" placeholder="Buscar Producto...">
+                <div class="navbar-item" >
+                    <div class="field has-addons ">
+                        <div class="control ">
+                            <input class="input has-text-black pr-6" type="text"  placeholder="Buscar Producto...">
                         </div>
                         <div class="control">
-                            <a href="#" class="button is-dark">
+                            <a href="#" class="button is-dark px-5">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
                             </a>
                         </div>
+                        
                     </div>
                 </div>
-            </div>
-        </div>    
-
+            </div>    
+            
             <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-primary">
-                            <strong>Sign up</strong>
+                <a href="#" class="navbar-item">
+                    <span class="icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <span>Mi Cesta</span>
+                    
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" id="mostrarUsuario">
+                        <span class="icon">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        <span> Mi Cuenta</span>
+                    </a>
+                    <div class="navbar-dropdown is-right" id="displayUser">
+                        <a href="#" class="navbar-item">
+                            <p class="is-size-6"><strong>Iniciar Sesión</strong></p>
                         </a>
-                        <a class="button is-light">
-                            Log in
+                        <hr class="navbar-divider">
+                        <a href="#" class="navbar-item">
+                            <p class="is-size-6"><strong>Registrarse</strong></p>
                         </a>
                     </div>
+                    
+                    
                 </div>
             </div>
         </div>

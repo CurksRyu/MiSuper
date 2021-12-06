@@ -1,7 +1,6 @@
 //libreria Jquery
 $(document).ready(() => {
     $("#displayCategories").hide();
-    $("#displaySup").hide();
     $("#displayUser").hide();
     alertify.dialog('alert').set({transition:'fade'}); 
 
@@ -11,14 +10,6 @@ $(document).ready(() => {
 
     $("#mostrarCat").on("click", function() {
         $("#displayCategories").toggle(200);
-    });
-
-    $("#mostrarSup").on("click", function() {
-        $("#displaySup").toggle(200);
-    });
-
-    $("#displaySup").mouseleave(function(){
-        $("#displaySup").hide(200);
     });
 
     $("#displayCategories").mouseleave(function(){
