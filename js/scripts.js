@@ -17,15 +17,15 @@ $(document).ready(() => {
     });
 
     $("#acerca").on("click", function() {
-        alertify.alert("Acerca de Mi Super","Proyecto culiao xd");
+        alertify.alert("Acerca de Mi Super","");
     });
 
     $("#tiendas").on("click", function() {
-        alertify.alert("Tiendas Asociadas","Proyecto culiao xd");
+        alertify.alert("Tiendas Asociadas","");
     });
     
     $("#about-us").on("click", function() {
-        alertify.alert("Quienes Somos","Proyecto culiao xd");
+        alertify.alert("Quienes Somos","");
     });
 
     $(".navbar-burger").click(function() {
