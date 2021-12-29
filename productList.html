@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/icon.png">
+    <link rel="shortcut icon" href="img/icon.png">
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="css/alertify.min.css">
@@ -34,6 +34,10 @@
             <div class="navbar-start">
                 <a class="navbar-item" href="index.html">
                     Inicio
+                </a>
+
+                <a class="navbar-item" href="">
+                    Mapa
                 </a>
 
                 <div class="navbar-item has-dropdown is-hoverable">
@@ -67,7 +71,7 @@
                             </div>        
                             <div class="column">
                                 <h1 class="title is-6 is-mega-menu-title">Lacteos</h1>
-                                <a class="navbar-item" href="/productList.html">
+                                <a class="navbar-item" href="productList.html">
                                     <div class="navbar-content">
                                         
                                         <p>Leches</p>
@@ -157,17 +161,6 @@
                     </div>
                 </div>
                 
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link" id="mostrarSup">
-                        Supermercados
-                    </a>
-                </div>
-                    
-                <div id="displaySup" class="navbar-dropdown">
-                        <a href="#" class="navbar-item">Santa Isabel</a>
-                        <a href="#" class="navbar-item">Jumbo</a>
-                </div>
-                
                 <div class="navbar-item" >
                     <div class="field has-addons ">
                         <div class="control ">
@@ -202,11 +195,11 @@
                     </a>
                     <div class="navbar-dropdown is-right" id="displayUser">
                         <a href="#" class="navbar-item">
-                            <p class="is-size-6"><strong>Registrarse</strong></p>
+                            <p class="is-size-6"><strong>Iniciar Sesión</strong></p>
                         </a>
                         <hr class="navbar-divider">
                         <a href="#" class="navbar-item">
-                            <p class="is-size-6"><strong>Iniciar Sesión</strong></p>
+                            <p class="is-size-6"><strong>Registrarse</strong></p>
                         </a>
                     </div>
                     
@@ -218,103 +211,92 @@
 
 
 
-    <section class="section pb-0">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
+    <section class="section pb-0 pt-5 ">
+        <nav class="breadcrumb is-medium has-arrow-separator p-3" aria-label="breadcrumbs">
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Categorias</a></li>
                 <li class="is-active"><a href="#" aria-current="page">Lacteos</a></li>
             </ul>
         </nav>
     </section>
 
 
-    <section class="section pt-5 ">
-        <div class="container is-fluid">
-            <div class="columns">
-                <div class="column">
-                    <div class="card">
+    <section class="section pt-3 px-0 ">
+        <div class="container is-fluid ">
+            <div class="columns is-multiline">
+                <div class="column mr-5 is-full-touch is-narrow-desktop">
+                    <div class="card is-radiusless ">
                         <div class="card-content">
-                            fsdf
+                            <p class="is-size-5">Precio</p>
+                            <input class="slider  is-success" step="1" min="0" max="100" value="50" type="range">
+                            <p class="is-size-5">Palabra clave</p>
+                            <div class="field has-addons ">
+                                <div class="control is-expanded">
+                                    <input class="input has-text-black " type="text"  placeholder="Buscar">
+                                </div>
+                                <div class="control">
+                                    <a href="#" class="button is-link ">
+                                        <span class="icon">
+                                            <i class="fas fa-search"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="is-size-5">Datos</p>
+                            <div class="field has-addons ">
+                                <div class="control is-expanded">
+                                    <input class="input has-text-black " type="text"  placeholder="Marca">
+                                </div>
+                                <div class="control ">
+                                    <a href="#" class="button is-link ">
+                                        <span class="icon">
+                                            <i class="fas fa-search"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="field has-addons ">
+                                <div class="control is-expanded">
+                                    <input class="input has-text-black " type="text"  placeholder="Supermercado">
+                                </div>
+                                <div class="control">
+                                    <a href="#" class="button is-link ">
+                                        <span class="icon">
+                                            <i class="fas fa-search"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
+                </div>
+            
+                <div class="column">
+                    <div id="app" class="columns is-multiline">
+                    </div>
+                </div>
+
+                <div class="column is-full">
+                    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+                        <a class="pagination-previous">Anterior</a>
+                        <a id="next" class="pagination-next">Siguiente</a>
+                        <ul class="pagination-list">
+                            <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+                            <li><span class="pagination-ellipsis">&hellip;</span></li>
+                            <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+                            <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+                            <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+                            <li><span class="pagination-ellipsis">&hellip;</span></li>
+                            <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <a href="#">
-                                <img src="img/otroEstilo_celeste.png" alt="" class="p-6">
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <p class="is-size-6">$900 Precio Oferta</p>
-                            <p class="is-size-4">Producto de muestra</p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-footer-item">
-                                <a href="#">Ver producto</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <a href="#">
-                                <img src="img/otroEstilo_celeste.png" alt="" class="p-6">
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <p class="is-size-6">$900 Precio Oferta</p>
-                            <p class="is-size-4">Producto de muestra</p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-footer-item">
-                                <a href="#">Ver producto</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <a href="#">
-                                <img src="img/otroEstilo_celeste.png" alt="" class="p-6">
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <p class="is-size-6">$900 Precio Oferta</p>
-                            <p class="is-size-4">Producto de muestra</p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-footer-item">
-                                <a href="#">Ver producto</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <a href="#">
-                                <img src="img/otroEstilo_celeste.png" alt="" class="p-6">
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <p class="is-size-6">$900 Precio Oferta</p>
-                            <p class="is-size-4">Producto de muestra</p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-footer-item">
-                                <a href="#">Ver producto</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
+    </div>
     </section>
 
     <footer class="footer has-background-black-ter">
@@ -344,5 +326,6 @@
             <strong class="has-text-white">&copy</strong> Mi Super 2021
         </div>
     </footer>
+    <script src="js/app.js" type="text/JavaScript"></script>
 </body>
 </html>
