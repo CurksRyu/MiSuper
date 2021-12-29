@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="css/alertify.min.css">
     <link rel="stylesheet" href="css/themes/semantic.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/JavaScript"></script>
     <script src="js/alertify.min.js" type="text/JavaScript"></script>
@@ -209,11 +210,63 @@
         </div>
     </nav>
 
-    <section class="section">
-        <div class="box has-background-primary">
-            
+    <!--carousel-->
+
+    <section class="hero is-medium has-carousel mt-4 mb-4">
+        <div>
+            <!-- Start Carousel -->
+            <div id="carousel-demo" class="hero-carousel">
+                <div class="item-1">
+                    <img src="https://baconmockup.com/640/350" alt="">
+                </div>
+                <div class="item-2">
+                    <!-- Slide Content -->
+                    <img src="https://baconmockup.com/640/370" alt="">
+                </div>
+                <div class="item-3">
+                    <!-- Slide Content -->
+                    <img src="https://baconmockup.com/640/361" alt="">
+                </div>
+                <div class="item-4">
+                    <!-- Slide Content -->
+                    <img src="https://baconmockup.com/640/351" alt="">
+                </div>
+                <div class="item-5">
+                    <!-- Slide Content -->
+                    <img src="https://baconmockup.com/640/352" alt="">
+                </div>
+                <div class="item-6">
+                    <!-- Slide Content -->
+                    <img src="https://baconmockup.com/640/353" alt="">
+                </div>
+            </div>
+            <!-- End Carousel -->
+
+        </div>
+        <div class="hero-head"></div>
+		<div class="hero-body"></div>
+		<div class="hero-foot"></div>
+        
+    </section>
+    <!--seccion de imagenes de supermercado-->
+    <section class="mt-4">
+        <h1 class="title is-3 has-text-centered has-text-grey ">Supermercados</h1>
+        <div class="container">
+            <div class="columns">
+                <div class="column" >
+                    <a href="https://www.lider.cl"><img src="img/Logo-lider500px.png" alt="lider"></a>
+                </div>
+                <div class="column">
+                    <a href="https://www.jumbo.cl"><img src="img/Logo_Jumbo_Cencosud.png" alt="Logo_Jumbo_Cencosud"></a>
+                </div>
+                <div class="column">
+                    <a href="https://www.santaisabel.cl"><img src="img/Logo_Santa_Isabel_Cencosud.png" alt="Logo_Santa_Isabel_Cencosud"></a>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!--Aqui comienza el footer-->
 
     <footer class="footer has-background-black-ter">
         <div class="columns is-centered is-mobile">
@@ -242,5 +295,15 @@
             <strong class="has-text-white">&copy</strong> Mi Super 2021
         </div>
     </footer>
+    <!--Script carousel-->
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+		bulmaCarousel.attach('#carousel-demo', {
+			slidesToScroll: 1,
+			slidesToShow: 3,
+            autoplay: true, //cualquier cosa borralo
+            loop: true,
+		});
+	</script>
 </body>
 </html>
