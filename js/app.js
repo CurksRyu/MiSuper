@@ -1,4 +1,4 @@
-/*import {productsData} from './products.js'*/
+//import {productsData} from './products'
 
 const productsData = [
 	{
@@ -156,44 +156,521 @@ const productsData = [
 		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/369929-360-360?width=360&height=360&aspect=true",
 		"enlaceProducto" : "/bebida-coco-natural-1-l-cuisine-and-co-1857077/",
 		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 13,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de almendras sabor natural 1 L",
+		"marcaProducto" : "Cuisine & Co",
+		"precioProducto" : "$3.000",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "2X",
+		"slugProducto" : "bebida-de-almendras-sabor-natural-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/410227-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-de-almendras-sabor-natural-1-l-cuisine-and-co-1804536/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 14,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de almendras sabor vainilla 1 L",
+		"marcaProducto" : "Cuisine & Co",
+		"precioProducto" : "$3.000",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "2X",
+		"slugProducto" : "bebida-de-almendras-sabor-vainilla-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/410228-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-de-almendras-sabor-vainilla-1-l-cuisine-and-co-1804537/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 15,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de coco original 1 L",
+		"marcaProducto" : "Vilay",
+		"precioProducto" : "$1.899",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-coco-original-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/352276-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-de-coco-original-1-l/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 16,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de coco chocolate 1 L",
+		"marcaProducto" : "Vilay",
+		"precioProducto" : "$1.899",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-coco-chocolate-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/352277-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/beb-vilay-coco-chocolate-1l/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 17,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de almendra coco 946 ml",
+		"marcaProducto" : "Almond Breeze",
+		"precioProducto" : "$3.490",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-almendra-coco-946-ml",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/349454-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-de-almendra-almond-breeze-coco-946-ml/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 18,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de almendra chocolate 946 ml",
+		"marcaProducto" : "Almond Breeze",
+		"precioProducto" : "$3.490",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-almendra-chocolate-946-ml",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/349453-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-de-almendra-almond-breeze-chocolate-946-ml/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 19,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida almendras 1 L",
+		"marcaProducto" : "Beegan",
+		"precioProducto" : "$3.699",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-almendras-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/361139-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/beb-almendras-beegan-1l/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 20,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de almendra original 200 cc",
+		"marcaProducto" : "Vilay",
+		"precioProducto" : "$609",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-almendra-original-200-cc",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/346330-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-almendra-vilay-original-200-cc/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 21,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Base de coco 250 ml",
+		"marcaProducto" : "Real Thai",
+		"precioProducto" : "$1.799",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "base-de-coco-250-ml",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/413847-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/base-de-coco-real-thai-250ml/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 22,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de almendra y vainilla original 200 ml",
+		"marcaProducto" : "Vilay",
+		"precioProducto" : "$609",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-almendra-y-vainilla-original-200-ml",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/346329-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-almendra-y-vainilla-vilay-original-1-l/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 23,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Pack 3 un. Bebida de almendras vainilla 200 ml",
+		"marcaProducto" : "Vilay",
+		"precioProducto" : "$1.827",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "pack-3-un-bebida-de-almendras-vainilla-200-ml",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/459084-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/beb-almendra-vilay-vaini-200ml-x3-1713119-pak/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 24,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Pack 3 un. Bebida de almendras original 200 ml",
+		"marcaProducto" : "Vilay",
+		"precioProducto" : "$1.827",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "pack-3-un-bebida-de-almendras-original-200-ml",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/459082-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/beb-almendra-vilay-original-200ml-x3-1713118-pak/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 25,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de almendra Vilay Original sin azúcar 1 L",
+		"marcaProducto" : "Vilay",
+		"precioProducto" : "0",
+		"precioOriginal" : "",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-almendra-vilay-original-sin-azucar-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/410044-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-de-almendra-vilay-original-sin-azucar-1-l/",
+		"disponibilidad" : 0
+	},
+	{
+		"idPRODUCTO" : 26,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de almendra sin azúcar 1 L",
+		"marcaProducto" : "Almendrola",
+		"precioProducto" : "0",
+		"precioOriginal" : "",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-almendra-sin-azucar-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/346317-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-de-almendra-almendrola-sin-azucar-1-l/",
+		"disponibilidad" : 0
+	},
+	{
+		"idPRODUCTO" : 27,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Alimento de soya almendra 1 L",
+		"marcaProducto" : "Ades",
+		"precioProducto" : "0",
+		"precioOriginal" : "",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "alimento-de-soya-almendra-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/435417-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/beb-almendra-ades-1l/",
+		"disponibilidad" : 0
+	},
+	{
+		"idPRODUCTO" : 28,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de coco 1 L",
+		"marcaProducto" : "Orasi",
+		"precioProducto" : "0",
+		"precioOriginal" : "",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-coco-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/363684-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-vegetal-de-coco-1-l/",
+		"disponibilidad" : 0
+	},
+	{
+		"idPRODUCTO" : 29,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de almendra 1 L",
+		"marcaProducto" : "Vilay",
+		"precioProducto" : "0",
+		"precioOriginal" : "",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-almendra-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/346336-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-lactea-vilay-almendra-vainilla-1l/",
+		"disponibilidad" : 0
+	},
+	{
+		"idPRODUCTO" : 30,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de coco sin azúcar y gluten 1 L",
+		"marcaProducto" : "Vivi Cosi",
+		"precioProducto" : "0",
+		"precioOriginal" : "",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-coco-sin-azucar-y-gluten-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/361473-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/beb-coco-s-az-sin-g-buonocosi-1l/",
+		"disponibilidad" : 0
+	},
+	{
+		"idPRODUCTO" : 31,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida vegetal almendra Quillayes 1 L",
+		"marcaProducto" : "Quillayes",
+		"precioProducto" : "0",
+		"precioOriginal" : "",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-vegetal-almendra-quillayes-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/346598-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-vegetal-quillayes-almendra-1-l/",
+		"disponibilidad" : 0
+	},
+	{
+		"idPRODUCTO" : 32,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de almendra & coco Nature's Heart, 946 ml",
+		"marcaProducto" : "Nature's Heart",
+		"precioProducto" : "0",
+		"precioOriginal" : "",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-almendra-coco-nature-s-heart-946-ml",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/371836-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/beb-almendra-coco-natures-heart-946ml/",
+		"disponibilidad" : 0
+	},
+	{
+		"idPRODUCTO" : 33,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida coco 946 ml",
+		"marcaProducto" : "Nature's Heart",
+		"precioProducto" : "0",
+		"precioOriginal" : "",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-coco-946-ml",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/371825-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-natures-heart-coco-946-ml/",
+		"disponibilidad" : 0
+	},
+	{
+		"idPRODUCTO" : 34,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de coco Nature´s Heart sin azúcar, 946 ml",
+		"marcaProducto" : "Nature's Heart",
+		"precioProducto" : "0",
+		"precioOriginal" : "",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-coco-natures-heart-sin-azucar-946-ml",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/371846-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-de-coco-nautres-heart-sin-azucar-946-ml/",
+		"disponibilidad" : 0
+	},
+	{
+		"idPRODUCTO" : 35,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de soya 1 L",
+		"marcaProducto" : "Orasi",
+		"precioProducto" : "$2.790",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-soya-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/398626-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-de-soya-orasi-1-l/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 36,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Alimento de soya natural 1 L",
+		"marcaProducto" : "Ades",
+		"precioProducto" : "$1.899",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "alimento-de-soya-natural-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/435412-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/alimento-de-soya-ades-natural-1-l-2/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 37,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Alimento de soya manzana 1 L",
+		"marcaProducto" : "Ades",
+		"precioProducto" : "$1.750",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "alimento-de-soya-manzana-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/435409-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/alimento-de-soya-ades-manzana-1-l-2/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 38,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de soya natural sin azúcar 1 L",
+		"marcaProducto" : "Berief",
+		"precioProducto" : "$2.129",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-soya-natural-sin-azucar-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/345764-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/beb-de-soya-berief-nat-s-azucar-org-1l/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 39,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Alimento de soya natural 1 L",
+		"marcaProducto" : "Loncoleche",
+		"precioProducto" : "$2.799",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "alimento-de-soya-natural-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/350026-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/alimento-de-soya-loncoleche-envase-1-l-sabor-natural/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 40,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Alimento de soya naranja 1 L",
+		"marcaProducto" : "Ades",
+		"precioProducto" : "$1.550",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "alimento-de-soya-naranja-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/435408-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/alimento-de-soya-ades-naranja-1-l-2/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 41,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Alimento de soya durazno 1 L",
+		"marcaProducto" : "Ades",
+		"precioProducto" : "$1.550",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "alimento-de-soya-durazno-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/435410-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/alimento-de-soya-ades-durazno-1-l-2/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 42,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida vegetal de soya chocolate 1 L",
+		"marcaProducto" : "Loncoleche",
+		"precioProducto" : "$2.799",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-vegetal-de-soya-chocolate-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/350025-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/alimento-de-soya-loncoleche-envase-1-l-sabor-chocolate/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 43,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Alimento de soya piña 1 L",
+		"marcaProducto" : "Ades",
+		"precioProducto" : "$1.550",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "alimento-de-soya-pina-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/435411-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/alimento-de-soya-ades-anana-1-l-2/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 44,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida orgánica de soya 1 L",
+		"marcaProducto" : "Natrue",
+		"precioProducto" : "$2.290",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-organica-de-soya-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/346078-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-organica-de-soya-1-l/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 45,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Alimento de soya piña 6 x 200 ml",
+		"marcaProducto" : "Ades",
+		"precioProducto" : "$1.860",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "alimento-de-soya-pina-6-x-200-ml",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/435418-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/pack-alimento-de-soya-ades-anana-6-unid-200-ml-c-u/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 46,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Alimento de soya naranja 200 ml",
+		"marcaProducto" : "Ades",
+		"precioProducto" : "$310",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "alimento-de-soya-naranja-200-ml",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/435416-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/alimento-de-soya-ades-naranja-200-ml/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 47,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Alimento de soya manzana 200 ml",
+		"marcaProducto" : "Ades",
+		"precioProducto" : "$310",
+		"precioOriginal" : "NULL",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "alimento-de-soya-manzana-200-ml",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/435415-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/alimento-de-soya-ades-manzana-200-ml-c-u/",
+		"disponibilidad" : 1
+	},
+	{
+		"idPRODUCTO" : 48,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Bebida de soya sin gluten 1 L",
+		"marcaProducto" : "Buonocosí",
+		"precioProducto" : "0",
+		"precioOriginal" : "",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "bebida-de-soya-sin-gluten-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/346666-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/bebida-de-soya-sin-gluten-1-l/",
+		"disponibilidad" : 0
+	},
+    {
+		"idPRODUCTO" : 49,
+		"SUPERMERCADO_idSUPERMERCADO" : 1,
+		"tituloProducto" : "Alimento de soya chocolate 1 L",
+		"marcaProducto" : "Ades",
+		"precioProducto" : "0",
+		"precioOriginal" : "",
+		"tipoPromocionProducto" : "",
+		"slugProducto" : "alimento-de-soya-chocolate-1-l",
+		"imagenProducto" : "https://jumbo.vtexassets.com/arquivos/ids/435422-360-360?width=360&height=360&aspect=true",
+		"enlaceProducto" : "/beb-soya-chocolate-ades-1l/",
+		"disponibilidad" : 0
 	}
-	
-];
+] 
 
 function productsTemplate(products) {
     return `
     <div class="column is-3-widescreen is-4-tablet ">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="#">
-                                        <img src="${products.imagenProducto}" alt="" class="p-4">
-                                    </a>
-                                </div>
-                                <div class="card-content">
-                                    <p class="is-size-6">${products.precioProducto}</p>
-                                    <p class="is-size-4">${products.tituloProducto}</p>
-									<p class="is-size-5 has-text-grey">${products.marcaProducto}</p>
-									<p class="is-size-5 has-text-grey">${ products.SUPERMERCADO_idSUPERMERCADO==1 ? "Jumbo": "F"}</p>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="card-footer-item">
-                                        <a href="${products.enlaceProducto}">Ver producto (ejemplo)</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="card">
+            <div class="card-image">
+                <a href="#">
+                    <img src="${products.imagenProducto}" alt="" class="p-4">
+                </a>
+            </div>
+            <div class="card-content">
+                <p class="is-size-6">${products.precioProducto}</p>
+                <p class="is-size-4">${products.tituloProducto}</p>
+				<p class="is-size-5 has-text-grey">${products.marcaProducto}</p>
+				<p class="is-size-5 has-text-grey">${ products.SUPERMERCADO_idSUPERMERCADO==1 ? "Jumbo": "F"}</p>
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-item">
+                    <a href="${products.enlaceProducto}">Ver producto (ejemplo)</a>
+                </div>
+            </div>
+        </div>
+    </div>
     `;
 }
 
 
-document.getElementById("app").innerHTML = `
-    ${productsData.map(productsTemplate).join("")}
-`;
+//document.getElementById("app").innerHTML = productsData.map(productsTemplate).join("")
 
-document.getElementById("next").addEventListener("click", mifuncion)
 
 var current_page = 1;
-var records_per_page = 3;
+var records_per_page = 12;
 
 function prevPage()
 {
@@ -213,26 +690,57 @@ function nextPage()
     
 function changePage(page)
 {
+	// extrayendo contenido html a variables
     var btn_next = document.getElementById("btn_next");
     var btn_prev = document.getElementById("btn_prev");
-    var listing_table = document.getElementById("listingTable");
-    var page_span = document.getElementById("page");
+    var listing_table = document.getElementById("app");
+    var page_prev = document.getElementById("page_prev");
+    var page_next = document.getElementById("page_next");
 
-    // Validate page
+    var li_page_curr = document.getElementById("li_page_curr");
+
+    // validar páginas (están demás xd¿)
     if (page < 1) page = 1;
     if (page > numPages()) page = numPages();
 
+	//Reinicio de contenido para las siguientes páginas
     listing_table.innerHTML = "";
 
-    for (var i = (page-1) * records_per_page; i < (page * records_per_page) && i < objJson.length; i++) {
-        listing_table.innerHTML += objJson[i].adName + "<br>";
+	//Muestra de contenido html de máximo 12 elementos por número de páginas
+    for (var i = (page-1) * records_per_page; i < (page * records_per_page) && i < productsData.length; i++) {
+		
+        listing_table.innerHTML += `
+        <div class="column is-3-widescreen is-4-tablet ">
+            <div class="card">
+                <div class="card-image">
+                    <a href="#">
+                        <img src="${productsData[i].imagenProducto}" alt="" class="p-4">
+                    </a>
+                </div>
+                <div class="card-content">
+                    <p class="is-size-6">${productsData[i].precioProducto}</p>
+                    <p class="is-size-4">${productsData[i].tituloProducto}</p>
+					<p class="is-size-5 has-text-grey">${productsData[i].marcaProducto}</p>
+					<p class="is-size-5 has-text-grey">${ productsData[i].SUPERMERCADO_idSUPERMERCADO==1 ? "Jumbo": "F"}</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-footer-item">
+                        <a href="${productsData[i].enlaceProducto}">Ver producto (ejemplo)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
     }
-    page_span.innerHTML = page + "/" + numPages();
 
+
+	//
     if (page == 1) {
         btn_prev.style.visibility = "hidden";
+        
     } else {
         btn_prev.style.visibility = "visible";
+        
     }
 
     if (page == numPages()) {
@@ -244,7 +752,7 @@ function changePage(page)
 
 function numPages()
 {
-    return Math.ceil(objJson.length / records_per_page);
+    return Math.ceil(productsData.length / records_per_page);
 }
 
 window.onload = function() {
