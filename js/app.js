@@ -433,7 +433,7 @@ const productsData = [
 	{
 		"idPRODUCTO" : 34,
 		"SUPERMERCADO_idSUPERMERCADO" : 1,
-		"tituloProducto" : "Bebida de coco Nature´s Heart sin azúcar, 946 ml",
+		"tituloProducto" : "Bebida de coco Nature's Heart sin azúcar, 946 ml",
 		"marcaProducto" : "Nature's Heart",
 		"precioProducto" : "0",
 		"precioOriginal" : "",
@@ -640,34 +640,21 @@ const productsData = [
 	}
 ] 
 
-function productsTemplate(products) {
-    return `
-    <div class="column is-3-widescreen is-4-tablet ">
-        <div class="card">
-            <div class="card-image">
-                <a href="#">
-                    <img src="${products.imagenProducto}" alt="" class="p-4">
-                </a>
-            </div>
-            <div class="card-content">
-                <p class="is-size-6">${products.precioProducto}</p>
-                <p class="is-size-4">${products.tituloProducto}</p>
-				<p class="is-size-5 has-text-grey">${products.marcaProducto}</p>
-				<p class="is-size-5 has-text-grey">${ products.SUPERMERCADO_idSUPERMERCADO==1 ? "Jumbo": "F"}</p>
-            </div>
-            <div class="card-footer">
-                <div class="card-footer-item">
-                    <a href="${products.enlaceProducto}">Ver producto (ejemplo)</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    `;
-}
+var precio_bajo;
+var productos_ordenados;
 
+//método sort que recibe como parámetro una función que toma el valor actual y el siguiente de una lista
+productsData.sort(function (a, b) {
+	if (parseInt(a.precioProducto.match(/\d/g).join(""), 10) > parseInt(b.precioProducto.match(/\d/g).join(""), 10)) {
+		return 1;
+	}
+	if (parseInt(a.precioProducto.match(/\d/g).join(""), 10) < parseInt(b.precioProducto.match(/\d/g).join(""), 10)) {
+		return -1;
+	}
+	return 0;
+});
 
-//document.getElementById("app").innerHTML = productsData.map(productsTemplate).join("")
-
+console.log(productsData)
 
 var current_page = 1;
 var records_per_page = 12;
@@ -694,14 +681,11 @@ function changePage(page)
     var btn_next = document.getElementById("btn_next");
     var btn_prev = document.getElementById("btn_prev");
     var listing_table = document.getElementById("app");
-    var page_prev = document.getElementById("page_prev");
-    var page_next = document.getElementById("page_next");
-
-    var li_page_curr = document.getElementById("li_page_curr");
 
     // validar páginas (están demás xd¿)
     if (page < 1) page = 1;
     if (page > numPages()) page = numPages();
+
 
 	//Reinicio de contenido para las siguientes páginas
     listing_table.innerHTML = "";
@@ -718,14 +702,14 @@ function changePage(page)
                     </a>
                 </div>
                 <div class="card-content">
-                    <p class="is-size-6">${productsData[i].precioProducto}</p>
+                    <p class="${parseInt(productsData[i].precioProducto.match(/\d/g).join(""), 10) == 0 ? `has-text-weight-bold ` : ``}is-size-5">${parseInt(productsData[i].precioProducto.match(/\d/g).join(""), 10) == 0 ? `PRODUCTO NO DISPONIBLE` : productsData[i].precioProducto} </p>
                     <p class="is-size-4">${productsData[i].tituloProducto}</p>
 					<p class="is-size-5 has-text-grey">${productsData[i].marcaProducto}</p>
 					<p class="is-size-5 has-text-grey">${ productsData[i].SUPERMERCADO_idSUPERMERCADO==1 ? "Jumbo": "F"}</p>
                 </div>
                 <div class="card-footer">
                     <div class="card-footer-item">
-                        <a href="${productsData[i].enlaceProducto}">Ver producto (ejemplo)</a>
+                        <a class="is-size-4 " href="${productsData[i].enlaceProducto}">Ver producto</a>
                     </div>
                 </div>
             </div>

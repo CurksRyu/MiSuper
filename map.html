@@ -13,10 +13,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/JavaScript"></script>
     <script src="js/alertify.min.js" type="text/JavaScript"></script>
     <script src="js/scripts.js" type="text/JavaScript"></script>
-    <title>Lacteos - Mi Super</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default%22%3E"></script>
+    <title>Mapa - Mi Super</title>
 </head>
 <body>
-
+    
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <div class="navbar-item py-0" href="https://bulma.io">
@@ -36,7 +37,7 @@
                     Inicio
                 </a>
 
-                <a class="navbar-item" href="map.html">
+                <a class="navbar-item" href="">
                     Mapa
                 </a>
 
@@ -209,86 +210,10 @@
         </div>
     </nav>
 
-                    <!-- LISTA DE PRODUCTOS -->
+    <section id="map" class="section is-large ">
 
-    <section class="section pb-0 pt-5 ">
-        <nav class="breadcrumb is-medium has-arrow-separator p-3" aria-label="breadcrumbs">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li class="is-active"><a href="#" aria-current="page">Lacteos</a></li>
-            </ul>
-        </nav>
     </section>
-
-
-    <section class="section pt-3 px-0 ">
-        <div class="container is-fluid ">
-            <div class="columns is-multiline">
-                <div class="column mr-5 is-full-touch is-narrow-desktop">
-                    <div class="card is-radiusless ">
-                        <div class="card-content">
-                            <p class="is-size-5">Precio</p>
-                            <input class="slider  is-success" step="1" min="0" max="100" value="50" type="range">
-                            <p class="is-size-5">Palabra clave</p>
-                            <div class="field has-addons ">
-                                <div class="control is-expanded">
-                                    <input class="input has-text-black " type="text"  placeholder="Buscar">
-                                </div>
-                                <div class="control">
-                                    <a href="#" class="button is-link ">
-                                        <span class="icon">
-                                            <i class="fas fa-search"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <p class="is-size-5">Datos</p>
-                            <div class="field has-addons ">
-                                <div class="control is-expanded">
-                                    <input class="input has-text-black " type="text"  placeholder="Marca">
-                                </div>
-                                <div class="control ">
-                                    <a href="#" class="button is-link ">
-                                        <span class="icon">
-                                            <i class="fas fa-search"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                                
-                            </div>
-                            <div class="field has-addons ">
-                                <div class="control is-expanded">
-                                    <input class="input has-text-black " type="text"  placeholder="Supermercado">
-                                </div>
-                                <div class="control">
-                                    <a href="#" class="button is-link ">
-                                        <span class="icon">
-                                            <i class="fas fa-search"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="column">
-                    <div id="app" class="columns is-multiline">
-                    </div>
-                </div>
-
-                <div class="column is-full">
-                    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-                        <a href="javascript:prevPage()" id="btn_prev" class="pagination-previous">Anterior</a>
-                        <a href="javascript:nextPage()" id="btn_next" id="next" class="pagination-next">Siguiente</a>
-                    </nav>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    </section>
+    
 
     <footer class="footer has-background-black-ter">
         <div class="columns is-centered is-mobile">
@@ -317,7 +242,7 @@
             <strong class="has-text-white">&copy</strong> Mi Super 2021
         </div>
     </footer>
-    <script src="js/app.js" type="text/JavaScript"></script>
-    <script src="js/products.js" type="text/JavaScript"></script>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCrZX3RJyDcvARXCDvYAHLIzWArH6WSRw&libraries=places&callback=initMap&v=weekly" async></script>
 </body>
 </html>
