@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^product/[a-z0-9]+(?:-[a-z0-9]+)*/([0-9]+)$ producto.php?publicacion=$2&id=$1

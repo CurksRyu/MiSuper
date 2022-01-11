@@ -1,19 +1,10 @@
 //libreria Jquery
 $(document).ready(() => {
-    $("#displayCategories").hide();
     $("#displayUser").hide();
     alertify.dialog('alert').set({transition:'fade'}); 
 
     $("#mostrarUsuario").on("click", function(){
         $("#displayUser").toggle(200);
-    });
-
-    $("#mostrarCat").on("click", function() {
-        $("#displayCategories").toggle(200);
-    });
-
-    $("#displayCategories").mouseleave(function(){
-        $("#displayCategories").hide(200);
     });
 
     $("#acerca").on("click", function() {
